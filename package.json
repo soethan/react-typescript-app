@@ -1,0 +1,24 @@
+{
+  "name": "webpack-react-typescript-app",
+  "version": "1.0.0",
+  "description": "Webpack with React and TypeScript App",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve",
+    "watch": "webpack -w",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.3",
+    "@types/react-dom": "^16.8.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "serve": "^10.1.2",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
