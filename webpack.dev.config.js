@@ -9,10 +9,15 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Development',
       template: path.join(__dirname, './index.html'),
     }),
   ],
+  devServer: {
+    contentBase: path.join(__dirname, './dist'),
+    port: 9000,
+    watchContentBase: false,
+    hotOnly: true
+  },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, './dist'),
@@ -22,6 +27,7 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
+        exclude: /node_modules/,
         loader: "ts-loader"
       }
     ]
