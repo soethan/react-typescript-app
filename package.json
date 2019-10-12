@@ -3,36 +3,40 @@
   "version": "1.0.0",
   "description": "Webpack with React and TypeScript App",
   "main": "index.js",
+  "homepage": "http://soethan.github.io/react-typescript-app",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.config.js --open --hot --inline",
     "build": "webpack",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "react-hot-loader": "^4.12.15",
-    "@storybook/theming": "^5.2.3",
     "@storybook/addon-actions": "^5.2.3",
     "@storybook/addon-links": "^5.2.3",
     "@storybook/addons": "^5.2.3",
-    "@storybook/react": "^5.2.3"
+    "@storybook/react": "^5.2.3",
+    "@storybook/theming": "^5.2.3",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-hot-loader": "^4.12.15"
   },
   "devDependencies": {
-    "typescript": "^3.3.3",
+    "@babel/core": "^7.6.4",
     "@types/node": "^12.7.12",
     "@types/react": "^16.8.3",
     "@types/react-dom": "^16.8.2",
-    "@babel/core": "^7.6.4",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "serve": "^10.1.2",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.3.3",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2",
-    "ts-loader": "^6.2.0",
-    "awesome-typescript-loader": "^5.2.1",
-    "clean-webpack-plugin": "^3.0.0",
-    "html-webpack-plugin": "^3.2.0"
+    "gh-pages": "^2.1.1"
   }
 }
