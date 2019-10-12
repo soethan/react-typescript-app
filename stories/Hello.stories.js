@@ -1,10 +1,6 @@
 import React from 'react';
 import { Hello } from '../src/components/Hello';
 
-export default {
-  title: 'Hello',
-};
-
 const HelloWithName = () => (
   <Hello name={"Soe Than"} />
 );
@@ -22,3 +18,6 @@ HelloWithoutName.story = {
 };
 
 export { HelloWithName, HelloWithoutName };
+export default {
+  title: 'Custom | Components/Hello'
+};
