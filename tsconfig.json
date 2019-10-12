@@ -16,6 +16,7 @@
       "dom",
       "dom.iterable"
     ],
-    "sourceMap": true
+    "sourceMap": true,
+    "rootDirs": ["src", "stories"]
   }
 }
