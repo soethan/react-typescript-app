@@ -8,3 +8,5 @@ git remote set-url https://<username>:<pwd>@github.com/soethan/react-typescript-
 
 https://github.com/transitive-bullshit/react-modern-library-boilerplate/issues/15
 rm -rf node_modules/gh-pages/.cache
+
+https://soethan.github.io/react-typescript-app/
