@@ -10,3 +10,11 @@ https://github.com/transitive-bullshit/react-modern-library-boilerplate/issues/1
 rm -rf node_modules/gh-pages/.cache
 
 https://soethan.github.io/react-typescript-app/
+
+Install lerna globally
+npm install --g lerna
+
+lerna init
+
+In packages/my-avatar folder,
+npm init -y
