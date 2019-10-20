@@ -1,6 +1,10 @@
 import React from 'react';
 
-const Hello = ({ name }) =>
+interface HelloProps {
+    name: string;
+}
+
+const Hello = ({ name }: HelloProps) =>
   (<div>Hello {name || "Guest"}</div>);
 
-export { Hello };
+export { Hello, HelloProps };
